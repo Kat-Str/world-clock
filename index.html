@@ -18,18 +18,20 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.42/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div id="content">
       <h1>World clock</h1>
-      <select name="cities" id="cities">
+      <select name="cities" id="selected-cities">
         <option value="">Select a city...</option>
-        <option value="new-york">New York</option>
-        <option value="berlin">Berlin</option>
-        <option value="tokyo">Tokyo</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Tokyo">Tokyo</option>
       </select>
       <div id="displayed-cities">
-        <div class="row displayed-city">
+        <div class="row displayed-city" id="warsaw">
           <div class="col section-one">
             <h2>
               <img src="media/poland.png" alt="Polish flag icon" /> Warsaw
@@ -40,10 +42,10 @@
             <h3 class="time">12:36:14</h3>
           </div>
         </div>
-        <div class="row displayed-city">
+        <div class="row displayed-city" id="shanghai">
           <div class="col section-one">
             <h2>
-              <img src="media/china.png" alt="Chinese flag icon" /> Beijing
+              <img src="media/china.png" alt="Chinese flag icon" /> Shanghai
             </h2>
             <h3 class="date">30 March 2023</h3>
           </div>
@@ -51,7 +53,7 @@
             <h3 class="time">12:36:14</h3>
           </div>
         </div>
-        <div class="row displayed-city">
+        <div class="row displayed-city" id="sydney">
           <div class="col section-one">
             <h2>
               <img src="media/australia.png" alt="Australian flag icon" />
