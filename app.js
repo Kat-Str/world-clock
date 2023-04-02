@@ -53,6 +53,9 @@ function displaySelectedCity() {
 
 function setSelectedCity(response) {
   selectedCity = response.target.value;
+  if (selectedCity === "current") {
+    selectedCity = moment.tz.guess();
+  }
   displaySelectedCity();
 }
 
