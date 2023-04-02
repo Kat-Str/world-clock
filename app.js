@@ -35,7 +35,9 @@ function displaySelectedCity() {
   displayedCities.innerHTML = `<div class="row displayed-city">
           <div class="col section-one">
             <h2>
-             ${selectedCity.replace("_", " ").split("/")[1]}
+             <img src="media/clock.png" alt="Clock icon" /> ${
+               selectedCity.replace("_", " ").split("/")[1]
+             }
             </h2>
             <h3 class="date">${moment()
               .tz(selectedCity)
@@ -45,6 +47,8 @@ function displaySelectedCity() {
             <h3 class="time">${moment().tz(selectedCity).format("H:mm:ss")}</h3>
           </div>
         </div>`;
+  let goBack = document.querySelector("#go-back");
+  goBack.innerHTML = `<a href="https://capable-sorbet-cc607e.netlify.app/">⬅ Return to the homepage</a>`;
 }
 
 function setSelectedCity(response) {

@@ -1,5 +1,5 @@
 body {
-  background-image: url("media/earth-background.webp");
+  background-image: url("media/world-map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -8,8 +8,7 @@ body {
 }
 
 img {
-  width: 40px;
-  border-radius: 50%;
+  width: 50px;
 }
 
 a {
@@ -49,7 +48,7 @@ select {
   padding: 40px 40px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0.85;
+  opacity: 0.99;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   width: 800px;
 }
@@ -91,4 +90,21 @@ select {
   color: #fff;
   width: 310px;
   margin: 0 auto;
+}
+
+#go-back {
+  padding-bottom: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-style: italic;
+}
+
+#go-back:hover {
+  opacity: 0.8;
+}
+
+#go-back a {
+  color: #000;
 }
